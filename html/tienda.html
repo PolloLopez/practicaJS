@@ -54,41 +54,13 @@
         </div>
     </header>
 
-    <!-- Seccion de Carrito de Compras -->
-    <div id="carrito" style="display: none;">
-        <h2>Carrito de compras</h2>
-        <ul id="lista-carrito"></ul>
-        <p>Total: $<span id="total-carrito">0.00</span></p>
-        <button onclick="realizarCompra()">Finalizar Compra</button>
-    </div>
-    <!-- Formulario de Compra -->
-    <div id="formulario-compra" style="display: none;">
-        <h2>Completa tus datos para comprar</h2>
-        <form>
-            <div class="campo-formulario">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" required>
-            </div>        
-            <div class="campo-formulario">
-                <label for="email">Email:</label>
-                <input type="email" id="email" required>
-            </div>
-            <div class="campo-formulario">
-                <label for="direccion">Direccion de envio:</label>
-                <input type="text" id="direccion" required>
-            </div>
-            <button type="submit">Realizar pago</button>
-        </form>
-    </div>
-
-
     <!-- HERO / BANNER -->
     <section class="contenedorTienda">
         <div class="tienda">
             <img class="tiendaImagen" src="../img/narizpayaso.png" alt="NARIZ PAYASO ESPONJA">
             <h3 class="producto">Nariz de Payaso</h3>
             <p class="tiendaDescripcion">Nariz de Payaso esponja</p>
-            <p class="tiendaPrecio"> $500 </p>
+            <p class="tiendaPrecio"> $2500 </p>
             <button class="botonTienda agregar-carrito">Agregar al carrito</button>
         </div>
 
@@ -96,7 +68,7 @@
             <img class="tiendaImagen" src="../img/peluca.png" alt="Peluca Payaso">
             <h3 class="producto">Peluca Payaso</h3>
             <p class="tiendaDescripcion">Peluca de lycra colores varios</p>
-            <p class="tiendaPrecio"> $3.000 </p>
+            <p class="tiendaPrecio"> $8000 </p>
             <button class="botonTienda agregar-carrito">Agregar al carrito</button>
         </div>
 
@@ -104,7 +76,7 @@
             <img class="tiendaImagen" src="../img/clavas.png" alt="Clavas Malabares">
             <h3 class="producto">Clavas K8</h3>
             <p class="tiendaDescripcion">Clavas K8 teflon reforzadas</p>
-            <p class="tiendaPrecio"> $6.500 c/u </p>
+            <p class="tiendaPrecio"> $12500 c/u </p>
             <button class="botonTienda agregar-carrito">Agregar al carrito</button>
         </div>
 
@@ -112,10 +84,39 @@
             <img class="tiendaImagen" src="../img/monociclo.png" alt="monociclo">
             <h3 class="producto">Monociclo</h3>
             <p class="tiendaDescripcion">Hierro, eje reforzado rodado 24</p>
-            <p class="tiendaPrecio"> $48.000 </p>
+            <p class="tiendaPrecio"> $250000 </p>
             <button class="botonTienda agregar-carrito">Agregar al carrito</button>
         </div>
     </section>
+
+        <!-- Seccion de Carrito de Compras -->
+        <div id="carrito" style="display: none;">
+            <h2>Carrito de compras</h2>
+            <ul id="lista-carrito"></ul>
+            <p>Total: $<span id="total-carrito">0.00</span></p>
+            <button class="botonTienda" onclick="realizarCompra()">Finalizar Compra</button>
+        </div>
+
+        <!-- Formulario de Compra -->
+        <div id="formulario-compra" style="display: none;">
+            <h2>Completa tus datos para comprar</h2>
+            <form>
+                <div class="campo-formulario">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" required>
+                </div>        
+                <div class="campo-formulario">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="campo-formulario">
+                    <label for="direccion">Direccion de envio:</label>
+                    <input type="text" id="direccion" required>
+                </div>
+                <button type="submit">Realizar pago</button>
+            </form>
+        </div>
+    
 
     <!-- Whatsapp -->
     <div>

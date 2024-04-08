@@ -43,6 +43,19 @@
     text-align: center;
 }
 
+
+#carrito {
+    display: block;
+    background-color: $color-botones-sec;
+    height: 450px;
+    width:  75%;
+    border: 6px solid $color-botones;
+    font-size: 2rem;
+    font-weight: 800;
+    color: $color-fuentes;
+    text-align: center;
+}
+
 #formulario-compra {
     margin-top: 20px;
     margin-bottom: 20px;

@@ -3,20 +3,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@100&family=Sen&display=swap");
 .botonActual {
   text-decoration: none;
-  color: #2b2d42;
-  background-color: rgba(55, 38, 117, 0.5607843137);
-  border: 2px solid rgba(32, 47, 77, 0.4666666667);
+  color: #136608;
+  background-color: #007bff;
+  border: 2.5px solid #EDEDED;
   padding: 3px;
   border-radius: 1rem;
   font-size: 2rem;
   margin: 0.5rem;
+  font-weight: 600;
 }
 
 .boton {
   text-decoration: none;
-  color: #2b2d42;
-  border: 2px solid rgba(32, 47, 77, 0.4666666667);
-  background-color: #EDEDED;
+  color: #fcfcfd;
+  border: 2px solid rgba(84, 174, 247, 0.5333333333);
+  background-color: #007bff;
   border-color: none;
   padding: 3px;
   border-radius: 1rem;
@@ -26,7 +27,7 @@
 }
 .boton:hover {
   border: 2px solid #EDEDED;
-  background-color: rgba(55, 38, 117, 0.5607843137);
+  background-color: #136608;
   color: #EDEDED;
 }
 
@@ -42,8 +43,8 @@
 }
 .botonTienda:hover {
   padding: 4px;
-  border: 2px solid #2b2d42;
-  color: #2b2d42;
+  border: 2px solid #fcfcfd;
+  color: #fcfcfd;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -58,7 +59,7 @@
   transform: translate(-50%);
   padding: 10px 20px;
   background-color: #EDEDED;
-  color: #2b2d42;
+  color: #fcfcfd;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -89,7 +90,7 @@
 /* FOOTER */
 footer {
   padding: 3rem;
-  border-top: 2px double rgba(32, 47, 77, 0.4666666667);
+  border-top: 2px double rgba(84, 174, 247, 0.5333333333);
   text-align: center;
   margin-top: 2rem;
 }
@@ -103,13 +104,13 @@ h3 {
 
 footer p {
   font-weight: 900;
-  color: #2b2d42;
+  color: #fcfcfd;
   font-size: 2rem;
   text-transform: uppercase;
 }
 
 .logoRedes {
-  color: rgba(32, 47, 77, 0.4666666667);
+  color: rgba(84, 174, 247, 0.5333333333);
   text-align: center;
   padding: 2rem;
   cursor: pointer;
@@ -159,7 +160,7 @@ html {
 
 body {
   font-family: "roboto", sans-serif;
-  background-color: rgba(55, 38, 117, 0.5607843137);
+  background-color: #136608;
 }
 
 /*HERO*/
@@ -174,11 +175,11 @@ h2 {
   margin-bottom: 0.5rem;
   font-size: 3rem;
   font-weight: 400;
-  color: #2b2d42;
+  color: #fcfcfd;
 }
 
 p {
-  color: #2b2d42;
+  color: #fcfcfd;
   font-size: 2rem;
   margin: 2rem;
   font-size: 1.8rem;
@@ -202,7 +203,7 @@ p {
   transform: translateX(-50%);
   padding: 10px 20px;
   background-color: #EDEDED;
-  color: #2b2d42;
+  color: #fcfcfd;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -219,7 +220,7 @@ p {
   display: inline-block;
   font-size: 3.5rem;
   font-weight: 600;
-  color: rgba(32, 47, 77, 0.4666666667);
+  color: rgba(84, 174, 247, 0.5333333333);
 }
 
 .circoDescripcion p {
@@ -260,14 +261,26 @@ p {
 
 .tiendaDescripcion {
   font-size: 1.5rem;
-  color: #2b2d42;
+  color: #fcfcfd;
   text-align: center;
 }
 
 .tiendaPrecio {
   font-size: 2rem;
-  color: #2b2d42;
+  color: #fcfcfd;
   font-weight: 600;
+  text-align: center;
+}
+
+#carrito {
+  display: block;
+  background-color: rgba(84, 174, 247, 0.5333333333);
+  height: 450px;
+  width: 75%;
+  border: 6px solid #EDEDED;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #fcfcfd;
   text-align: center;
 }
 

@@ -1,13 +1,14 @@
 /* BOTONES */
 .botonActual {
     text-decoration: none;
-    color: $color-fuentes;
-    background-color: $color-fondo;
-    border: 2px solid $color-botones-sec;
+    color: $color-fondo;
+    background-color: $color-boton;
+    border: 2.5px solid $color-botones;
     padding: 3px;
     border-radius: 1rem;
     font-size: 2rem;
     margin: 0.5rem;
+    font-weight: 600;
 }
 
 
@@ -15,7 +16,7 @@
     text-decoration: none;
     color: $color-fuentes;
     border: 2px solid $color-botones-sec;
-    background-color: $color-botones;
+    background-color: $color-boton;
     border-color: none;
     padding: 3px;
     border-radius: 1rem;
