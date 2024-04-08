@@ -42,3 +42,40 @@
     font-weight: 600;
     text-align: center;
 }
+
+#formulario-compra {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#formulario-compra .campo-formulario {
+    margin-bottom: 15px;
+}
+
+#formulario-compra label {
+    display: block; /* Para que cada etiqueta se muestre en una línea separada */
+}
+
+#formulario-compra .campo-formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+#formulario-compra button {
+    background-color: $color-boton;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#formulario-compra button:hover {
+    background-color: darken($color-boton, 10%);
+}
+
+#formulario-compra .campo-error {
+    border: 1px solid red; /* Cambia el borde del campo a rojo en caso de error */
+}
+
