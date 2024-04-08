@@ -45,16 +45,22 @@
 
 
 #carrito {
-    display: block;
-    background-color: $color-botones-sec;
-    height: 450px;
+    display: flex;
+    justify-content: center; /* Centra verticalmente el contenido */
+    align-items: center; /* Centra horizontalmente el contenido */
+    background-color: $color-boton;
+    height: 20%;
     width:  75%;
-    border: 6px solid $color-botones;
+    margin: 0 auto; /* Centra horizontalmente el contenedor */
+    border: 2px solid $color-fuentes;
+    border-radius: 30px;
     font-size: 2rem;
     font-weight: 800;
     color: $color-fuentes;
     text-align: center;
+    margin-top: 2rem;
 }
+
 
 #formulario-compra {
     margin-top: 20px;
