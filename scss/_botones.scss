@@ -1,0 +1,70 @@
+/* BOTONES */
+.botonActual {
+    text-decoration: none;
+    color: $color-fuentes;
+    background-color: $color-fondo;
+    border: 2px solid $color-botones-sec;
+    padding: 3px;
+    border-radius: 1rem;
+    font-size: 2rem;
+    margin: 0.5rem;
+}
+
+
+.boton {
+    text-decoration: none;
+    color: $color-fuentes;
+    border: 2px solid $color-botones-sec;
+    background-color: $color-botones;
+    border-color: none;
+    padding: 3px;
+    border-radius: 1rem;
+    font-size: 2rem;
+    margin: 0.5rem;
+    font-weight: 600;
+
+    &:hover {
+        border: 2px solid $color-botones;
+        background-color: $color-fondo;
+        color: $color-botones;
+    }
+}
+
+.botonTienda  {
+    text-decoration: none;
+    color: $color-fuentes-titulos;
+    background-color: $color-botones-tienda;
+    border: 2px solid $color-fuentes-titulos;
+    padding: 3px;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    margin: 0.5rem;
+
+    &:hover {
+        padding: 4px;
+        border: 2px solid $color-fuentes;
+        color: $color-fuentes;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+.siguienteHero {
+    position: relative;
+}
+
+.botonLeer { 
+    position: absolute; 
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 10px 20px; 
+    background-color: $color-botones; 
+    color: $color-fuentes; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+}
+
+.siguienteHero {
+    position: relative;
+}

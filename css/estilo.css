@@ -1,0 +1,361 @@
+@charset "UTF-8";
+/* BOTONES */
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@100&family=Sen&display=swap");
+.botonActual {
+  text-decoration: none;
+  color: #2b2d42;
+  background-color: rgba(55, 38, 117, 0.5607843137);
+  border: 2px solid rgba(32, 47, 77, 0.4666666667);
+  padding: 3px;
+  border-radius: 1rem;
+  font-size: 2rem;
+  margin: 0.5rem;
+}
+
+.boton {
+  text-decoration: none;
+  color: #2b2d42;
+  border: 2px solid rgba(32, 47, 77, 0.4666666667);
+  background-color: #EDEDED;
+  border-color: none;
+  padding: 3px;
+  border-radius: 1rem;
+  font-size: 2rem;
+  margin: 0.5rem;
+  font-weight: 600;
+}
+.boton:hover {
+  border: 2px solid #EDEDED;
+  background-color: rgba(55, 38, 117, 0.5607843137);
+  color: #EDEDED;
+}
+
+.botonTienda {
+  text-decoration: none;
+  color: #edf2f4;
+  background-color: #ef233c;
+  border: 2px solid #edf2f4;
+  padding: 3px;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  margin: 0.5rem;
+}
+.botonTienda:hover {
+  padding: 4px;
+  border: 2px solid #2b2d42;
+  color: #2b2d42;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.siguienteHero {
+  position: relative;
+}
+
+.botonLeer {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 10px 20px;
+  background-color: #EDEDED;
+  color: #2b2d42;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.siguienteHero {
+  position: relative;
+}
+
+.imgLogo {
+  height: 7.5rem;
+  transition: transform 2.5s;
+  transform: rotate(360deg);
+}
+
+@keyframes rotateInfinitely {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.imgLogo:hover {
+  animation: rotateInfinitely 2.5s infinite linear;
+}
+
+/* FOOTER */
+footer {
+  padding: 3rem;
+  border-top: 2px double rgba(32, 47, 77, 0.4666666667);
+  text-align: center;
+  margin-top: 2rem;
+}
+
+h3 {
+  text-align: center;
+  color: #edf2f4;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+footer p {
+  font-weight: 900;
+  color: #2b2d42;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.logoRedes {
+  color: rgba(32, 47, 77, 0.4666666667);
+  text-align: center;
+  padding: 2rem;
+  cursor: pointer;
+  font-size: 4rem;
+}
+.logoRedes:hover {
+  font-size: 5rem;
+  color: #ef233c;
+}
+
+.logoWhatsapp {
+  width: 5rem;
+  position: fixed;
+  bottom: 40px;
+  right: 1.5rem;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+.logoWhatsapp:hover {
+  width: 6rem;
+}
+
+/* galería */
+.galeria {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.foto {
+  margin-top: 1rem;
+  display: block;
+  border-radius: 4rem;
+  filter: grayscale(65%);
+  object-fit: cover;
+}
+.foto:hover {
+  filter: grayscale(0%);
+  border-radius: 2rem;
+  transition: all 0.1s;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "roboto", sans-serif;
+  background-color: rgba(55, 38, 117, 0.5607843137);
+}
+
+/*HERO*/
+.hero {
+  display: inline-block;
+  color: #edf2f4;
+  position: relative;
+  width: 100%;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+  font-size: 3rem;
+  font-weight: 400;
+  color: #2b2d42;
+}
+
+p {
+  color: #2b2d42;
+  font-size: 2rem;
+  margin: 2rem;
+  font-size: 1.8rem;
+}
+
+.hero h2 span {
+  font-weight: 800;
+  padding: 0.5px;
+  position: relative;
+}
+
+.containerHero {
+  display: flex;
+  margin-top: 0;
+}
+
+.botonLeer {
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: #EDEDED;
+  color: #2b2d42;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.circoDescripcion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.circoDescripcion h2 {
+  display: inline-block;
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: rgba(32, 47, 77, 0.4666666667);
+}
+
+.circoDescripcion p {
+  max-width: 90%;
+  margin-top: 10px;
+}
+
+/*TARJETAS DE LA TIENDA */
+.contenedorTienda {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  gap: 1rem;
+}
+
+.tienda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 0.7rem;
+  background-color: rgba(102, 127, 172, 0.7568627451);
+  margin-left: 1rem;
+  margin-top: 2rem;
+}
+
+.tiendaImagen {
+  width: 100%;
+  height: 50%;
+  position: relative;
+  border-radius: 1.5rem;
+}
+
+.producto {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.tiendaDescripcion {
+  font-size: 1.5rem;
+  color: #2b2d42;
+  text-align: center;
+}
+
+.tiendaPrecio {
+  font-size: 2rem;
+  color: #2b2d42;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* ENCABEZADO//HEADER */
+.encabezado {
+  display: flex;
+  height: 8rem;
+  padding: 1rem 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  display: inline-block;
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #edf2f4;
+}
+
+/* Medias Queries */
+@media (max-width: 767px) {
+  .encabezado {
+    margin-top: 1rem;
+  }
+  .tituloPrincipal h1 {
+    display: none;
+  }
+  .imagenMuestra {
+    max-width: 90%;
+    margin: auto;
+  }
+  .hero {
+    margin-top: auto;
+    position: relative;
+  }
+  .contenedorTienda {
+    grid-template-columns: 2fr;
+  }
+  .galeria {
+    margin-top: 1rem;
+  }
+  .footer {
+    align-items: center;
+  }
+}
+@media (min-width: 200px) and (max-width: 599px) {
+  /* Estilos para pantallas entre 200px y 499px */
+  .botonLeer {
+    display: inline-block;
+    opacity: 0.5;
+    position: relative;
+    bottom: auto;
+    left: auto;
+    transform: none;
+    margin: 1rem;
+    width: 50%;
+  }
+  .descripcionP {
+    display: none;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  /* Estilos para pantallas entre 500px y 1024px */
+  .botonLeer {
+    display: none;
+  }
+  .descripcionP {
+    display: block !important;
+  }
+}
+@media (min-width: 1025px) {
+  /* Estilos para pantallas mayores a 1025px */
+  .botonLeer {
+    display: none;
+  }
+  .descripcionP {
+    display: block;
+  }
+}
+@media (min-width: 406px) {
+  /* Estilos para pantallas mayores a 406px */
+  /* galería */
+  .galeria {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */
