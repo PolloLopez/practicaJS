@@ -2,7 +2,7 @@
 
 .hero {
   display: inline-block;
-  color: $color-fuentes-titulos;
+  color: $color-fuentes;
   position: relative;
   width: 100%;
 }
@@ -57,7 +57,7 @@ p {
   display: inline-block;
   font-size: 3.5rem;
   font-weight: 600;
-  color: $color-botones-sec;
+  color: $color-botones;
 }
 
 .circoDescripcion p {

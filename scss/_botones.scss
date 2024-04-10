@@ -1,22 +1,21 @@
 /* BOTONES */
 .botonActual {
     text-decoration: none;
-    color: $color-fondo;
-    background-color: $color-boton;
-    border: 2.5px solid $color-botones;
+    color: $color-fuentes;
+    background-color: $color-fondo;
+    border: 2px solid $color-botones;
     padding: 3px;
     border-radius: 1rem;
     font-size: 2rem;
     margin: 0.5rem;
-    font-weight: 600;
 }
 
 
 .boton {
     text-decoration: none;
     color: $color-fuentes;
-    border: 2px solid $color-botones-sec;
-    background-color: $color-boton;
+    border: 2px solid $color-botones;
+    background-color: $color-tarjetas;
     border-color: none;
     padding: 3px;
     border-radius: 1rem;
@@ -33,9 +32,9 @@
 
 .botonTienda  {
     text-decoration: none;
-    color: $color-fuentes-titulos;
+    color: $color-fuentes;
     background-color: $color-botones-tienda;
-    border: 2px solid $color-fuentes-titulos;
+    border: 2px solid $color-fuentes;
     padding: 3px;
     border-radius: 0.5rem;
     font-size: 2rem;
@@ -68,4 +67,11 @@
 
 .siguienteHero {
     position: relative;
+}
+
+.btn-group {
+    text-decoration: none;
+    color: $color-fondo;
+    background-color: $color-tarjetas;
+    font-size: 1rem;
 }

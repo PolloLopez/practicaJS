@@ -48,7 +48,7 @@
     display: flex;
     justify-content: center; /* Centra verticalmente el contenido */
     align-items: center; /* Centra horizontalmente el contenido */
-    background-color: $color-boton;
+    background-color: $color-tarjetas;
     height: 20%;
     width:  75%;
     margin: 0 auto; /* Centra horizontalmente el contenedor */
@@ -81,7 +81,7 @@
 }
 
 #formulario-compra button {
-    background-color: $color-boton;
+    background-color: $color-tarjetas;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -91,7 +91,7 @@
 }
 
 #formulario-compra button:hover {
-    background-color: darken($color-boton, 10%);
+    background-color: darken($color-tarjetas, 10%);
 }
 
 #formulario-compra .campo-error {

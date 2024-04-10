@@ -2,13 +2,13 @@
 let carrito = [];
 
 // Esta función se ejecuta cuando el DOM está completamente cargado
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Aquí puedes comenzar a trabajar con el DOM
 
     // Ejemplo de manejo de eventos: Agregar un listener al botón de compra
     const botonesCompra = document.querySelectorAll('.botonTienda');
     botonesCompra.forEach(boton => {
-        boton.addEventListener('click', function() {
+        boton.addEventListener('click', function () {
             const producto = boton.parentElement;
             const nombreProducto = producto.querySelector('.producto').textContent;
             const precioProducto = parseFloat(producto.querySelector('.tiendaPrecio').textContent.replace('$', ''));
@@ -67,3 +67,31 @@ function realizarCompra() {
     carrito = [];
     mostrarCarrito();
 }
+
+/* BOTON DARK MODE */
+const body = document.body;
+
+function activarDarkMode() {
+    body.classList.add("dark-mode");
+    localStorage.setItem("dark-mode", "activado");
+}
+
+function desactivarDarkMode() {
+    body.classList.remove("dark-mode");
+    localStorage.setItem("dark-mode", "desactivado");
+}
+
+// Lógica para activar/desactivar el modo oscuro
+if (localStorage.getItem("dark-mode") === "activado") {
+    activarDarkMode();
+} else {
+    desactivarDarkMode();
+}
+
+botonColorMode.addEventListener("click", () => {
+    if (body.classList.contains("dark-mode")) {
+        desactivarDarkMode();
+    } else {
+        activarDarkMode();
+    }
+})

@@ -1,23 +1,27 @@
 @charset "UTF-8";
-/* BOTONES */
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@100&family=Sen&display=swap");
+.dark-mode {
+  background-color: #a4c7f0;
+  color: #010108;
+}
+
+/* BOTONES */
 .botonActual {
   text-decoration: none;
-  color: #136608;
-  background-color: #007bff;
-  border: 2.5px solid #EDEDED;
+  color: #010108;
+  background-color: #a4c7f0;
+  border: 2px solid #1a64ee;
   padding: 3px;
   border-radius: 1rem;
   font-size: 2rem;
   margin: 0.5rem;
-  font-weight: 600;
 }
 
 .boton {
   text-decoration: none;
-  color: #fcfcfd;
-  border: 2px solid rgba(84, 174, 247, 0.5333333333);
-  background-color: #007bff;
+  color: #010108;
+  border: 2px solid #1a64ee;
+  background-color: rgba(26, 35, 155, 0.4862745098);
   border-color: none;
   padding: 3px;
   border-radius: 1rem;
@@ -26,16 +30,16 @@
   font-weight: 600;
 }
 .boton:hover {
-  border: 2px solid #EDEDED;
-  background-color: #136608;
-  color: #EDEDED;
+  border: 2px solid #1a64ee;
+  background-color: #a4c7f0;
+  color: #1a64ee;
 }
 
 .botonTienda {
   text-decoration: none;
-  color: #edf2f4;
-  background-color: #ef233c;
-  border: 2px solid #edf2f4;
+  color: #010108;
+  background-color: #4c126e;
+  border: 2px solid #010108;
   padding: 3px;
   border-radius: 0.5rem;
   font-size: 2rem;
@@ -43,8 +47,8 @@
 }
 .botonTienda:hover {
   padding: 4px;
-  border: 2px solid #fcfcfd;
-  color: #fcfcfd;
+  border: 2px solid #010108;
+  color: #010108;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -58,8 +62,8 @@
   left: 50%;
   transform: translate(-50%);
   padding: 10px 20px;
-  background-color: #EDEDED;
-  color: #fcfcfd;
+  background-color: #1a64ee;
+  color: #010108;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -67,6 +71,13 @@
 
 .siguienteHero {
   position: relative;
+}
+
+.btn-group {
+  text-decoration: none;
+  color: #a4c7f0;
+  background-color: rgba(26, 35, 155, 0.4862745098);
+  font-size: 1rem;
 }
 
 .imgLogo {
@@ -90,27 +101,27 @@
 /* FOOTER */
 footer {
   padding: 3rem;
-  border-top: 2px double rgba(84, 174, 247, 0.5333333333);
+  border-top: 2px double #1a64ee;
   text-align: center;
   margin-top: 2rem;
 }
 
 h3 {
   text-align: center;
-  color: #edf2f4;
+  color: #010108;
   text-transform: uppercase;
   font-size: 2rem;
 }
 
 footer p {
   font-weight: 900;
-  color: #fcfcfd;
+  color: #010108;
   font-size: 2rem;
   text-transform: uppercase;
 }
 
 .logoRedes {
-  color: rgba(84, 174, 247, 0.5333333333);
+  color: #1a64ee;
   text-align: center;
   padding: 2rem;
   cursor: pointer;
@@ -118,7 +129,7 @@ footer p {
 }
 .logoRedes:hover {
   font-size: 5rem;
-  color: #ef233c;
+  color: #010108;
 }
 
 .logoWhatsapp {
@@ -160,13 +171,13 @@ html {
 
 body {
   font-family: "roboto", sans-serif;
-  background-color: #136608;
+  background-color: #a4c7f0;
 }
 
 /*HERO*/
 .hero {
   display: inline-block;
-  color: #edf2f4;
+  color: #010108;
   position: relative;
   width: 100%;
 }
@@ -175,11 +186,11 @@ h2 {
   margin-bottom: 0.5rem;
   font-size: 3rem;
   font-weight: 400;
-  color: #fcfcfd;
+  color: #010108;
 }
 
 p {
-  color: #fcfcfd;
+  color: #010108;
   font-size: 2rem;
   margin: 2rem;
   font-size: 1.8rem;
@@ -202,8 +213,8 @@ p {
   left: 50%;
   transform: translateX(-50%);
   padding: 10px 20px;
-  background-color: #EDEDED;
-  color: #fcfcfd;
+  background-color: #1a64ee;
+  color: #010108;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -220,7 +231,7 @@ p {
   display: inline-block;
   font-size: 3.5rem;
   font-weight: 600;
-  color: rgba(84, 174, 247, 0.5333333333);
+  color: #1a64ee;
 }
 
 .circoDescripcion p {
@@ -241,7 +252,7 @@ p {
   align-items: center;
   padding: 2rem;
   border-radius: 0.7rem;
-  background-color: rgba(246, 250, 30, 0.5058823529);
+  background-color: rgba(26, 35, 155, 0.4862745098);
   margin-left: 1rem;
   margin-top: 2rem;
 }
@@ -261,13 +272,13 @@ p {
 
 .tiendaDescripcion {
   font-size: 1.5rem;
-  color: #fcfcfd;
+  color: #010108;
   text-align: center;
 }
 
 .tiendaPrecio {
   font-size: 2rem;
-  color: #fcfcfd;
+  color: #010108;
   font-weight: 600;
   text-align: center;
 }
@@ -276,15 +287,15 @@ p {
   display: flex;
   justify-content: center; /* Centra verticalmente el contenido */
   align-items: center; /* Centra horizontalmente el contenido */
-  background-color: #007bff;
+  background-color: rgba(26, 35, 155, 0.4862745098);
   height: 20%;
   width: 75%;
   margin: 0 auto; /* Centra horizontalmente el contenedor */
-  border: 2px solid #fcfcfd;
+  border: 2px solid #010108;
   border-radius: 30px;
   font-size: 2rem;
   font-weight: 800;
-  color: #fcfcfd;
+  color: #010108;
   text-align: center;
   margin-top: 2rem;
 }
@@ -308,7 +319,7 @@ p {
 }
 
 #formulario-compra button {
-  background-color: #007bff;
+  background-color: rgba(26, 35, 155, 0.4862745098);
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -318,7 +329,7 @@ p {
 }
 
 #formulario-compra button:hover {
-  background-color: #0062cc;
+  background-color: rgba(19, 25, 111, 0.4862745098);
 }
 
 #formulario-compra .campo-error {
@@ -338,7 +349,7 @@ h1 {
   display: inline-block;
   font-size: 3.5rem;
   font-weight: 600;
-  color: #edf2f4;
+  color: #010108;
 }
 
 /* Medias Queries */
