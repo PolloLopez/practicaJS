@@ -73,12 +73,12 @@ const body = document.body;
 const botonColorMode = document.getElementById("color-mode");
 
 function activarDarkMode() {
-    body.classList.add("dark-mode");
+    body.classList.toggle("dark-mode", true);
     localStorage.setItem("dark-mode", "activado");
 }
 
 function desactivarDarkMode() {
-    body.classList.remove("dark-mode");
+    body.classList.remove("dark-mode", false);
     localStorage.setItem("dark-mode", "desactivado");
 }
 
