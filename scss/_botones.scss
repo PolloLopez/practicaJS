@@ -1,9 +1,8 @@
 /* BOTONES */
 .botonActual {
     text-decoration: none;
-    color: $color-fuentes;
-    background-color: $color-fondo;
-    border: 2px solid $color-botones;
+    color: $color-fuentes-oscuro;
+    background-color: $color-fondo-oscuro;
     padding: 3px;
     border-radius: 1rem;
     font-size: 2rem;
@@ -13,9 +12,9 @@
 
 .boton {
     text-decoration: none;
-    color: $color-fuentes;
-    border: 2px solid $color-botones;
-    background-color: $color-tarjetas;
+    color: $color-fuentes-claro;
+    border: 2px solid $color-fondo-oscuro;
+    background-color: $color-fondo-claro;
     border-color: none;
     padding: 3px;
     border-radius: 1rem;
@@ -24,17 +23,17 @@
     font-weight: 600;
 
     &:hover {
-        border: 2px solid $color-botones;
-        background-color: $color-fondo;
-        color: $color-botones;
+        border: 2px solid $color-fondo-oscuro;
+        background-color: $color-fondo-claro;
+        color: $color-fondo-oscuro;
     }
 }
 
 .botonTienda  {
     text-decoration: none;
-    color: $color-fuentes;
-    background-color: $color-botones-tienda;
-    border: 2px solid $color-fuentes;
+    color: $color-fuentes-claro;
+    background-color: $color-botones-tienda-oscuro;
+    border: 2px solid $color-fuentes-claro;
     padding: 3px;
     border-radius: 0.5rem;
     font-size: 2rem;
@@ -42,8 +41,8 @@
 
     &:hover {
         padding: 4px;
-        border: 2px solid $color-fuentes;
-        color: $color-fuentes;
+        border: 2px solid $color-fuentes-claro;
+        color: $color-fuentes-oscuro;
         font-family: Arial, Helvetica, sans-serif;
     }
 }
@@ -58,8 +57,8 @@
     left: 50%;
     transform: translate(-50%);
     padding: 10px 20px; 
-    background-color: $color-botones; 
-    color: $color-fuentes; 
+    background-color: $color-fuentes-oscuro; 
+    color: $color-fuentes-claro; 
     border: none; 
     border-radius: 5px; 
     cursor: pointer;
@@ -69,9 +68,9 @@
     position: relative;
 }
 
-.btn-group {
+.btn {
     text-decoration: none;
-    color: $color-fondo;
-    background-color: $color-tarjetas;
-    font-size: 1rem;
+    color: $color-fuentes-oscuro;
+    background-color: $color-tarjetas-claro;
+    font-size: 1.5rem;
 }

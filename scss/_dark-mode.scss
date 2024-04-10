@@ -1,5 +1,16 @@
+// Importa tus variables
+@import "variables";
+
+// Estilos para el modo claro
+.light-mode {
+    background-color: $color-fondo-claro;
+    color: $color-fuentes-claro;
+    // Otros estilos específicos del modo claro...
+}
+
 // Estilos para el modo oscuro
 .dark-mode {
-    background-color: $color-fuentes;
-    color: $color-fondo;
-  }
+    background-color: $color-fondo-oscuro;
+    color: $color-fuentes-oscuro;
+    // Otros estilos específicos del modo oscuro...
+}
