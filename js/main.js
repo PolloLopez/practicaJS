@@ -70,6 +70,7 @@ function realizarCompra() {
 
 /* BOTON DARK MODE */
 const body = document.body;
+const botonColorMode = document.getElementById("color-mode");
 
 function activarDarkMode() {
     body.classList.add("dark-mode");
