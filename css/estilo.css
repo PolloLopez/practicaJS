@@ -2,7 +2,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@100&family=Sen&display=swap");
 .light-mode {
   background-color: #fcfcfd;
-  color: rgb(70, 0, 110);
+}
+.light-mode h1,
+.light-mode h2,
+.light-mode h3,
+.light-mode h4,
+.light-mode p {
+  color: #241670;
+}
+.light-mode .encabezado .tituloEncabezado {
+  color: #241670;
 }
 
 .dark-mode {
@@ -13,7 +22,7 @@
 .dark-mode h3,
 .dark-mode h4,
 .dark-mode p {
-  color: white;
+  color: #fcfcfd;
 }
 .dark-mode .encabezado .tituloEncabezado {
   color: #fcfcfd;
@@ -86,11 +95,18 @@
   position: relative;
 }
 
-.btn {
+.botonDark {
+  display: inline-block;
   text-decoration: none;
-  color: #fcfcfd;
+  color: grey;
+  background-color: rgba(247, 39, 2, 0.7411764706);
+  padding: 3px;
+  border-radius: 0.5rem;
+  font-weight: 800;
+}
+.botonDark:hover {
   background-color: rgba(40, 201, 48, 0.8274509804);
-  font-size: 1.5rem;
+  color: #241670;
 }
 
 .imgLogo {

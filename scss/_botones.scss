@@ -29,7 +29,7 @@
     }
 }
 
-.botonTienda  {
+.botonTienda {
     text-decoration: none;
     color: $color-fuentes-claro;
     background-color: $color-botones-tienda-oscuro;
@@ -51,16 +51,16 @@
     position: relative;
 }
 
-.botonLeer { 
-    position: absolute; 
+.botonLeer {
+    position: absolute;
     bottom: 20px;
     left: 50%;
     transform: translate(-50%);
-    padding: 10px 20px; 
-    background-color: $color-fuentes-oscuro; 
-    color: $color-fuentes-claro; 
-    border: none; 
-    border-radius: 5px; 
+    padding: 10px 20px;
+    background-color: $color-fuentes-oscuro;
+    color: $color-fuentes-claro;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
 
@@ -68,9 +68,17 @@
     position: relative;
 }
 
-.btn {
+.botonDark {
+    display: inline-block;
     text-decoration: none;
-    color: $color-fuentes-oscuro;
-    background-color: $color-tarjetas-claro;
-    font-size: 1.5rem;
+    color: grey;
+    background-color: $color-tarjetas-oscuro;
+    padding: 3px;
+    border-radius: 0.5rem;
+    font-weight: 800;
+
+    &:hover {
+        background-color: $color-tarjetas-claro;
+        color: $color-fondo-oscuro;
+    }
 }

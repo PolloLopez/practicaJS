@@ -15,8 +15,6 @@ document.addEventListener('DOMContentLoaded', function () {
             agregarAlCarrito(nombreProducto, precioProducto);
         });
     });
-
-    // Más código y funciones pueden ir aquí
 });
 
 // Función para agregar productos al carrito
@@ -76,14 +74,25 @@ function activarDarkMode() {
     body.classList.add("dark-mode");
     body.classList.remove("light-mode");
     localStorage.setItem("dark-mode", "activado");
+    actualizarTextoModo(); //llamo la funcion actualizar texto
 }
 
 function desactivarDarkMode() {
     body.classList.remove("dark-mode");
     body.classList.add("light-mode");
     localStorage.setItem("dark-mode", "desactivado");
+    actualizarTextoModo(); //llamo la funcion actualizar text
 }
 
+// Función para cambiar el texto del botón según el modo
+function actualizarTextoModo() {
+    const botonColorMode = document.getElementById("color-mode");
+    if (body.classList.contains("dark-mode")) {
+        botonColorMode.textContent = "Claro";
+    } else {
+        botonColorMode.textContent = "Oscuro";
+    }
+}
 
 // Lógica para activar/desactivar el modo oscuro
 if (localStorage.getItem("dark-mode") === "activado") {

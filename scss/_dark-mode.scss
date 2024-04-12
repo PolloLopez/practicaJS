@@ -4,21 +4,33 @@
 // Estilos para el modo claro
 .light-mode {
     background-color: $color-fondo-claro;
-    color: rgb(70, 0, 110);
-
-}
-
-// Estilos modo oscuro
-.dark-mode {
-    background-color: $color-fondo-oscuro;
-    $color-texto: rgb(0, 238, 255); // Color oscuro deseadoo
 
     h1,
     h2,
     h3,
     h4,
     p {
-        color: white;
+        color: $color-fuentes-claro;
+    }
+
+    .encabezado .tituloEncabezado {
+        color: $color-fuentes-claro;
+    }
+
+
+}
+
+// Estilos modo oscuro
+.dark-mode {
+    background-color: $color-fondo-oscuro;
+    $color-texto: rgb(0, 238, 255); // Color oscuro deseado
+
+    h1,
+    h2,
+    h3,
+    h4,
+    p {
+        color: $color-fuentes-oscuro;
     }
 
     .encabezado .tituloEncabezado {
