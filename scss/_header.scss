@@ -1,4 +1,6 @@
 /* ENCABEZADO//HEADER */
+@import "variables";
+
 .encabezado {
   display: flex;
   height: 8rem;
@@ -11,7 +13,7 @@ h1 {
   display: inline-block;
   font-size: 3.5rem;
   font-weight: 600;
-  color: $color-fuentes-oscuro;
+  color: $color-fuentes-claro;
 }
 
 

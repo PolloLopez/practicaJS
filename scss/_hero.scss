@@ -39,7 +39,7 @@ p {
   left: 50%;
   transform: translateX(-50%);
   padding: 10px 20px;
-  background-color: $color-botones;
+  background-color: $color-botones-claro;
   color: $color-fuentes-claro;
   border: none;
   border-radius: 5px;
@@ -57,7 +57,7 @@ p {
   display: inline-block;
   font-size: 3.5rem;
   font-weight: 600;
-  color: $color-botones;
+  color: $color-botones-claro;
 }
 
 .circoDescripcion p {

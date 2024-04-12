@@ -73,14 +73,17 @@ const body = document.body;
 const botonColorMode = document.getElementById("color-mode");
 
 function activarDarkMode() {
-    body.classList.toggle("dark-mode", true);
+    body.classList.add("dark-mode");
+    body.classList.remove("light-mode");
     localStorage.setItem("dark-mode", "activado");
 }
 
 function desactivarDarkMode() {
-    body.classList.remove("dark-mode", false);
+    body.classList.remove("dark-mode");
+    body.classList.add("light-mode");
     localStorage.setItem("dark-mode", "desactivado");
 }
+
 
 // Lógica para activar/desactivar el modo oscuro
 if (localStorage.getItem("dark-mode") === "activado") {
@@ -88,6 +91,7 @@ if (localStorage.getItem("dark-mode") === "activado") {
 } else {
     desactivarDarkMode();
 }
+
 
 botonColorMode.addEventListener("click", () => {
     if (body.classList.contains("dark-mode")) {
