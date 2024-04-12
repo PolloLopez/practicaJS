@@ -98,15 +98,15 @@
 .botonDark {
   display: inline-block;
   text-decoration: none;
-  color: grey;
+  color: #241670;
   background-color: rgba(247, 39, 2, 0.7411764706);
   padding: 3px;
   border-radius: 0.5rem;
   font-weight: 800;
 }
 .botonDark:hover {
+  color: #fcfcfd;
   background-color: rgba(40, 201, 48, 0.8274509804);
-  color: #241670;
 }
 
 .imgLogo {
@@ -157,8 +157,8 @@ footer p {
   font-size: 4rem;
 }
 .logoRedes:hover {
-  font-size: 5rem;
-  color: #241670;
+  font-size: 4.5rem;
+  color: rgba(247, 39, 2, 0.7411764706);
 }
 
 .logoWhatsapp {

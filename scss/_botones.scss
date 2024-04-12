@@ -71,14 +71,14 @@
 .botonDark {
     display: inline-block;
     text-decoration: none;
-    color: grey;
+    color: $color-fuentes-claro;
     background-color: $color-tarjetas-oscuro;
     padding: 3px;
     border-radius: 0.5rem;
     font-weight: 800;
 
     &:hover {
+        color:$color-fuentes-oscuro;
         background-color: $color-tarjetas-claro;
-        color: $color-fondo-oscuro;
     }
 }
