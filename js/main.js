@@ -62,7 +62,7 @@ function mostrarCarrito() {
 // Función para realizar la compra
 function realizarCompra() {
     // Aquí puedes agregar la lógica para procesar la compra
-    alert('Compra realizada con éxito. ¡Gracias por tu compra!');
+    alert('Compra realizada con éxito! ¡Gracias por tu compra!');
     // Limpiamos el carrito después de realizar la compra
     carrito = [];
     mostrarCarrito();
