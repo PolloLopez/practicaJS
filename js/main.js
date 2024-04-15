@@ -1,3 +1,5 @@
+// para llamar correctamente la funcion despues hay que poner parentesis abierto y cerrado ()
+
 // Arreglo para almacenar los productos en el carrito
 let carrito = [];
 
@@ -67,24 +69,43 @@ function realizarCompra() {
 }
 
 /* BOTON DARK MODE */
+const botonColorMode = document.querySelector("#color-mode");
 const body = document.body;
-const botonColorMode = document.getElementById("color-mode");
 
+let darkMode = localStorage.getItem("dark-mode");
+
+
+// funcion del boton activar - desactivar dark-mode
 function activarDarkMode() {
     body.classList.add("dark-mode");
-    body.classList.remove("light-mode");
     localStorage.setItem("dark-mode", "activado");
-    actualizarTextoModo(); //llamo la funcion actualizar texto
+    actualizarTextoModo(); //llamo la funcion actualizar texto ??
 }
 
 function desactivarDarkMode() {
     body.classList.remove("dark-mode");
-    body.classList.add("light-mode");
     localStorage.setItem("dark-mode", "desactivado");
-    actualizarTextoModo(); //llamo la funcion actualizar text
+    actualizarTextoModo(); //llamo la funcion actualizar texto ??
 }
 
-// Función para cambiar el texto del botón según el modo
+// para que iniciar como se cerro
+if (darkMode === "activado") {
+    activarDarkMode();
+} else {
+    desactivarDarkMode();
+}
+
+//aca el boton llama a las funciones
+botonColorMode.addEventListener("click", () => {
+    if (body.classList.contains("dark-mode")) {
+        desactivarDarkMode();
+    } else {
+        activarDarkMode();
+    }
+})
+
+
+//Función para cambiar el texto del botón según el modo
 function actualizarTextoModo() {
     const botonColorMode = document.getElementById("color-mode");
     if (body.classList.contains("dark-mode")) {
@@ -94,18 +115,9 @@ function actualizarTextoModo() {
     }
 }
 
-// Lógica para activar/desactivar el modo oscuro
+//Lógica para activar/desactivar el modo oscuro
 if (localStorage.getItem("dark-mode") === "activado") {
     activarDarkMode();
 } else {
     desactivarDarkMode();
 }
-
-
-botonColorMode.addEventListener("click", () => {
-    if (body.classList.contains("dark-mode")) {
-        desactivarDarkMode();
-    } else {
-        activarDarkMode();
-    }
-})

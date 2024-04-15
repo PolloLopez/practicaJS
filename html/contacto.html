@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="../css/estilo.css">
 </head>
 
-<body class="container-fluid">
+<body class="light-mode container-fluid">
     <!-- HEADER -->
     <header class="navbar navbar-expand-lg fixed-right encabezado">
         <div class="container-fluid">
@@ -52,29 +52,40 @@
             </nav>
         </div>
     </header>
-    
+
+    <div class="botonDark">
+        <button id="color-mode" class="btn">Oscuro</button>
+    </div>
+
 
     <!-- HERO / BANNER -->
     <section class="container container-fluid col-xl-6 md-4 sm-9">
 
         <div class="mb-1" id="formulario">
-            <label for="exampleFormControlInput1" class="form-label link-light fs-4">Nombre</label>
+            <label for="exampleFormControlInput1" class="form-label link-light fs-4">
+                <p>Nombre</p>
+            </label>
             <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombres">
         </div>
 
         <div class="mb-1" id="formulario">
-            <label for="exampleFormControlInput1" class="form-label link-light fs-4">Apellido</label>
+            <label for="exampleFormControlInput1" class="form-label link-light fs-4">
+                <p>Apellido</p>
+            </label>
             <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Apellidos">
         </div>
 
 
         <div class="mb-1">
-            <label for="exampleFormControlTextarea1" class="form-label link-light fs-4">Dejame tu mensaje</label>
+            <label for="exampleFormControlTextarea1" class="form-label link-light fs-4">
+                <p>Dejame tu mensaje</p>
+            </label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
         <div class="col-auto">
             <button type="submit" class="btn btn-warning mb-3 fs-4 d-inline-block w-100 boton">CONTACTAME</button>
         </div>
+
 
         <!-- Whatsapp -->
         <div>
