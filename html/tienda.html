@@ -93,11 +93,13 @@
     </section>
 
     <!-- Seccion de Carrito de Compras -->
-    <div id="carrito" style="display: none;">
-        <h2>Carrito de compras</h2>
+    <div id="carrito" style="display: block;">
+        <h2>Tu carrito de compras</h2>
         <ul id="lista-carrito"></ul>
         <p>Total: $<span id="total-carrito">0.00</span></p>
-        <button class="botonTienda" onclick="realizarCompra()">Finalizar Compra</button>
+        <form id="formulario-carrito">
+            <button type="button" class="botonTienda" id="btn-finalizar-compra">Finalizar Compra</button>
+        </form>
     </div>
 
     <!-- Formulario de Compra -->

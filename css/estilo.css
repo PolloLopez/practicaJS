@@ -315,17 +315,17 @@ p {
 
 #carrito {
   display: flex;
-  justify-content: center; /* Centra verticalmente el contenido */
-  align-items: center; /* Centra horizontalmente el contenido */
-  background-color: rgba(109, 154, 250, 0.8274509804);
+  justify-content: center; /* Centra vertical */
+  align-items: center; /* Centra horizontalmente */
+  margin: 0 auto; /* Centra horizontalmente el contenedor! */
   height: 20%;
   width: 75%;
-  margin: 0 auto; /* Centra horizontalmente el contenedor! */
+  background-color: rgba(109, 154, 250, 0.8274509804);
+  color: #241670;
   border: 2px solid #241670;
   border-radius: 30px;
   font-size: 2rem;
   font-weight: 800;
-  color: #241670;
   text-align: center;
   margin-top: 2rem;
 }

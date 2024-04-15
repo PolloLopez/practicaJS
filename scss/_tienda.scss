@@ -46,17 +46,17 @@
 
 #carrito {
     display: flex;
-    justify-content: center; /* Centra verticalmente el contenido */
-    align-items: center; /* Centra horizontalmente el contenido */
-    background-color: $color-tarjetas-claro;
+    justify-content: center; /* Centra vertical */
+    align-items: center; /* Centra horizontalmente */
+    margin: 0 auto; /* Centra horizontalmente el contenedor! */
     height: 20%;
     width:  75%;
-    margin: 0 auto; /* Centra horizontalmente el contenedor! */
+    background-color: $color-tarjetas-claro;
+    color: $color-fuentes-claro;
     border: 2px solid $color-fondo-oscuro;
     border-radius: 30px;
     font-size: 2rem;
     font-weight: 800;
-    color: $color-fuentes-claro;
     text-align: center;
     margin-top: 2rem;
 }
