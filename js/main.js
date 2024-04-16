@@ -13,6 +13,7 @@ function mostrarFormulario() {
     document.getElementById('carrito').style.display = 'none';
     document.getElementById('formulario-compra').style.display = 'block';
 }
+
 /* BOTON DARK MODE */
 const botonColorMode = document.querySelector("#color-mode");
 const body = document.body;
@@ -62,7 +63,7 @@ botonColorMode.addEventListener("click", () => {
 // Esta función se ejecuta cuando el DOM está completamente cargado
 document.addEventListener('DOMContentLoaded', function () {
     // Ejemplo de manejo de eventos: Agregar un listener al botón de compra
-    const botonesCompra = document.querySelectorAll('.botonTienda');
+    const botonesCompra = document.querySelectorAll('.agregar-carrito'); // Cambiado a la clase correcta
     botonesCompra.forEach(boton => {
         boton.addEventListener('click', function () {
             const producto = boton.parentElement;
@@ -71,7 +72,19 @@ document.addEventListener('DOMContentLoaded', function () {
             agregarAlCarrito(nombreProducto, precioProducto);
         });
     });
+
+    // Agregar event listeners para los botones de eliminar dentro del carrito
+    const botonesEliminar = document.querySelectorAll('.eliminar-producto');
+    botonesEliminar.forEach(boton => {
+        boton.addEventListener('click', function () {
+            const index = parseInt(boton.getAttribute('data-index'));
+            eliminarDelCarrito(index);
+        });
+    });
+        // Ocultar el carrito si está vacío al cargar la página
+        mostrarOCultarCarrito();
 });
+
 
 // Función para agregar productos al carrito
 function agregarAlCarrito(producto, precio) {
@@ -84,6 +97,9 @@ function agregarAlCarrito(producto, precio) {
     // Agregamos el producto al carrito
     carrito.push(nuevoProducto);
 
+    // Mostramos u ocultamos el carrito según si hay productos en él
+    mostrarOCultarCarrito();
+
     // Actualizamos la visualización del carrito
     mostrarCarrito();
 }
@@ -91,7 +107,18 @@ function agregarAlCarrito(producto, precio) {
 // Función para eliminar un producto del carrito
 function eliminarDelCarrito(index) {
     carrito.splice(index, 1); // Elimina el producto del arreglo de carrito
+    mostrarOCultarCarrito(); // Mostrar u ocultar el carrito según si hay productos en él
     mostrarCarrito(); // Actualiza la visualización del carrito
+}
+
+// Función para mostrar el carrito si hay productos en él
+function mostrarOCultarCarrito() {
+    const carritoDiv = document.getElementById('carrito');
+    if (carrito.length > 0) {
+        carritoDiv.style.display = 'block';
+    } else {
+        carritoDiv.style.display = 'none';
+    }
 }
 
 // Función para mostrar los productos en el carrito
@@ -99,9 +126,21 @@ function mostrarCarrito() {
     const listaCarrito = document.getElementById('lista-carrito');
     listaCarrito.innerHTML = '';
 
-    carrito.forEach(producto => {
+    carrito.forEach((producto, index) => {
         const elementoCarrito = document.createElement('li');
         elementoCarrito.textContent = `${producto.nombre} - $${producto.precio}`;
+
+        const botonEliminar = document.createElement('button');
+        botonEliminar.textContent = 'Eliminar';
+        botonEliminar.setAttribute('data-index', index);
+        botonEliminar.classList.add('eliminar-producto');
+
+        botonEliminar.addEventListener('click', function () {
+            const index = parseInt(botonEliminar.getAttribute('data-index'));
+            eliminarDelCarrito(index);
+        });
+
+        elementoCarrito.appendChild(botonEliminar);
         listaCarrito.appendChild(elementoCarrito);
     });
 
@@ -110,10 +149,10 @@ function mostrarCarrito() {
     document.getElementById('total-carrito').textContent = total.toFixed(2);
 
     // Mostramos el carrito
-    document.getElementById('carrito').style.display = 'block';
+    mostrarOCultarCarrito();
 }
 
 // Agregar un evento de escucha para el botón "Finalizar Compra"
-document.getElementById('btn-finalizar-compra').addEventListener('click', function() {
+document.getElementById('btn-finalizar-compra').addEventListener('click', function () {
     mostrarFormulario();
 });
