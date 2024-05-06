@@ -3,7 +3,7 @@
         "titulo": "Peluca Payaso",
         "precio": 1000,
         "descripcion": "Peluca de lycra colores varios",
-        "img": "./img/peluca.png"
+        "img": "/PRACTICAJS/img/peluca.png"
     },
     {
         "titulo": "Clavas K8",
