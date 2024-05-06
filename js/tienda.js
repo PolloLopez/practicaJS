@@ -4,7 +4,7 @@ let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 let productos = [];
 
 /*traer de base de datos local */
-fetch("/PRACTICAJS/data/productos.json")
+fetch("/practicaJS/data/productos.json")
     .then(res => res.json())
     .then(data => {
         productos = data;
