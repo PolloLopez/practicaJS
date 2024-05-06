@@ -10,13 +10,13 @@
 .dark-mode h5,
 .dark-mode h6,
 .dark-mode p {
-  color: #fefefe;
+  color: #f1dfdf;
 }
 
 /* BOTONES !*/
 .botonActual {
   text-decoration: none;
-  background-color: #fefefe;
+  background-color: #f1dfdf;
   border: 2px solid rgba(11, 45, 86, 0.8352941176);
   color: rgba(11, 45, 86, 0.8352941176);
   padding: 3px;
@@ -28,7 +28,7 @@
 
 .boton {
   text-decoration: none;
-  color: #fefefe;
+  color: #f1dfdf;
   background-color: rgba(11, 45, 86, 0.8352941176);
   padding: 3px;
   border-radius: 1rem;
@@ -37,43 +37,33 @@
 }
 .boton:hover {
   border: 2px solid rgba(11, 45, 86, 0.8352941176);
-  background-color: #fefefe;
+  background-color: #f1dfdf;
   color: rgba(11, 45, 86, 0.8352941176);
 }
 
 .botonDark {
-  margin-top: 0.7rem;
+  margin-top: 25px;
+  position: fixed;
+  left: 1rem;
   /* margen al h1 de cada pagina */
 }
 
-.botonDarkEstilo {
-  text-decoration: none;
-  color: #fefefe;
-  background-color: #000000;
-  border: 2px solid #fefefe;
-}
-.botonDarkEstilo:hover {
-  border: 2px solid #000000;
-  background-color: #fefefe;
-  color: rgba(9, 9, 108, 0.9490196078);
-}
-
 .form-control {
-  background-color: #fefefe;
+  background-color: #f1dfdf;
   border: 2px solid rgba(9, 9, 108, 0.9490196078);
 }
 
 .botonLeer {
   padding: 1rem 2.5rem;
-  color: #fefefe;
+  color: #f1dfdf;
   font-size: 1.3rem;
   background-color: rgba(9, 9, 108, 0.9490196078);
-  border: 1px solid #fefefe;
+  border: 1px solid #f1dfdf;
   border-radius: 5px;
   cursor: pointer;
 }
 .botonLeer:hover {
-  border: 3px solid #fefefe;
+  border: 3px solid #f1dfdf;
   font-weight: 700;
 }
 
@@ -83,7 +73,7 @@
 
 .btn-finalizar {
   text-decoration: none;
-  color: #fefefe;
+  color: #f1dfdf;
   background-color: rgba(11, 45, 86, 0.8352941176);
   padding: 3px;
   border-radius: 1rem;
@@ -99,9 +89,26 @@
 }
 .btn-finalizar:hover {
   border: 2px solid rgba(11, 45, 86, 0.8352941176);
-  background-color: #fefefe;
+  background-color: #f1dfdf;
   color: rgba(11, 45, 86, 0.8352941176);
   font-weight: 700;
+}
+
+.botonDarkEstilo {
+  position: absolute; /* Cambiado a absolute */
+  left: 1rem;
+  top: 0.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: #f1dfdf;
+  background-color: #000000;
+  border: 2px solid #f1dfdf;
+  z-index: 999; /* Asegura que esté por encima de otros elementos */
+}
+.botonDarkEstilo:hover {
+  border: 2px solid #000000;
+  background-color: #f1dfdf;
+  color: rgba(9, 9, 108, 0.9490196078);
 }
 
 .imgLogo {
@@ -197,7 +204,7 @@ html {
   padding: 0;
   box-sizing: border-box;
   font-family: "roboto", sans-serif;
-  background-color: #fefefe;
+  background-color: #f1dfdf;
   background: none;
   color: rgba(9, 9, 108, 0.9490196078);
 }
@@ -278,7 +285,7 @@ h6 {
   align-items: center;
   padding: 2rem;
   border-radius: 0.7rem;
-  background-color: rgba(109, 154, 250, 0.8274509804);
+  background-color: rgba(117, 155, 238, 0.8274509804);
   margin-left: 1rem;
   margin-top: 2rem;
 }
@@ -340,7 +347,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .producto {
   margin-top: 0.1rem;
-  background-color: rgba(109, 154, 250, 0.8274509804);
+  background-color: rgba(117, 155, 238, 0.8274509804);
   padding: 0.5rem 0.2rem;
   border-radius: 1rem;
   color: rgba(9, 9, 108, 0.9490196078);
@@ -411,7 +418,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .carrito-producto-btn {
-  background-color: rgba(109, 154, 250, 0.8274509804);
+  background-color: rgba(117, 155, 238, 0.8274509804);
   padding: 0.5rem;
   border: 1px solid rgba(9, 9, 108, 0.9490196078);
   margin-right: 4px;
@@ -419,7 +426,7 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
 }
 .carrito-producto-btn:hover {
-  background-color: #fefefe;
+  background-color: #f1dfdf;
   color: #000000;
 }
 
@@ -440,8 +447,10 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   height: 8rem;
   padding: 1rem 0;
+  padding-block: 0.5rem;
   justify-content: space-between;
   align-items: center;
+  margin-top: none;
 }
 
 h1 {
@@ -455,6 +464,10 @@ h1 {
 /* Medias Queries! */
 .textoCompleto {
   display: none;
+}
+
+.tituloPrincipal h1 {
+  margin-top: none;
 }
 
 /*# sourceMappingURL=estilo.css.map */

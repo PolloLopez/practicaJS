@@ -28,22 +28,12 @@
 }
 
 .botonDark {
-    margin-top: 0.7rem;
+    margin-top: 25px;
+    position: fixed;
+    left: 1rem;
     /* margen al h1 de cada pagina */
 }
 
-.botonDarkEstilo {
-    text-decoration: none;
-    color: $color-fondo-claro;
-    background-color: $color-negro;
-    border: 2px solid $color-fondo-claro;
-
-    &:hover {
-        border: 2px solid $color-negro;
-        background-color: $color-fondo-claro;
-        color: $color-fuentes-claro;
-    }
-}
 
 .form-control {
     background-color: $color-fondo-claro;
@@ -90,5 +80,23 @@
         background-color: $color-fondo-claro;
         color: $color-fondo-oscuro;
         font-weight: 700;
+    }
+}
+
+.botonDarkEstilo {
+    position: absolute; /* Cambiado a absolute */
+    left: 1rem;
+    top: 0.5rem; 
+    cursor: pointer;
+    text-decoration: none;
+    color: $color-fondo-claro;
+    background-color: $color-negro;
+    border: 2px solid $color-fondo-claro;
+    z-index: 999; /* Asegura que esté por encima de otros elementos */
+
+    &:hover {
+        border: 2px solid $color-negro;
+        background-color: $color-fondo-claro;
+        color: $color-fuentes-claro;
     }
 }
