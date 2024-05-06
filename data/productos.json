@@ -3,19 +3,19 @@
         "titulo": "Peluca Payaso",
         "precio": 1000,
         "descripcion": "Peluca de lycra colores varios",
-        "img": "../img/peluca.png"
+        "img": "./img/peluca.png"
     },
     {
         "titulo": "Clavas K8",
         "precio": 2000,
         "descripcion": "Reforzadas, de teflon",
-        "img": "../img/clavas.png"
+        "img": "./img/clavas.png"
     },
     {
         "titulo": "Chalupas",
         "precio": 3000,
         "descripcion": "%100 Artesanales",
-        "img": "../img/chalupa.png"
+        "img": "./img/chalupa.png"
     },
     {
         "titulo": "Hula",
