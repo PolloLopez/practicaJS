@@ -1,3 +1,8 @@
+.containerTienda {
+    max-width: auto;
+    margin: 0 auto;
+    padding-inline: 1.5rem;
+}
 /*TARJETAS DE LA TIENDA */
 
 .contenedorTienda {
@@ -17,84 +22,159 @@
     margin-top: 2rem;
 }
 
-.tiendaImagen {
-    width: 100%;
-    height: 50%;
-    position: relative;
-    border-radius: 1.5rem;
+img {
+    max-width: 100%;
+    display: block;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Bricolage Grotesque", sans-serif;
+}
 .producto {
     font-size: 3rem;
     font-weight: bold;
     text-align: center;
 }
 
-.tiendaDescripcion {
-    font-size: 1.5rem;
-    color: $color-fuentes-claro;
-    text-align: center;
+.header {
+    padding-block: 1rem;
 }
 
-.tiendaPrecio {
-    font-size: 2rem;
-    color: $color-fuentes-claro;
-    font-weight: 600;
-    text-align: center;
-}
-
-
-#carrito {
+.header-items {
     display: flex;
-    justify-content: center; /* Centra vertical */
-    align-items: center; /* Centra horizontalmente */
-    margin: 0 auto; /* Centra horizontalmente el contenedor! */
-    height: 20%;
-    width:  75%;
-    background-color: $color-tarjetas-claro;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mainTienda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alinea el contenido a la parte inferior */
+    align-items: flex-end; /* Alinea el contenido a la derecha */
+    padding-block: 2rem;
+    margin: auto;
+}
+
+
+.titulo {
+    margin-bottom: 1rem;
+}
+
+.carrito-main {
+    text-decoration: none;
+    font-size: 2.5rem;
+}
+
+#numerito {
+    font-size: 1.2em; 
+    font-weight: 600; 
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.producto {
+    margin-top: .1rem;
+    background-color:$color-tarjetas-claro;
+    padding: .5rem .2rem;
+    border-radius: 1rem;
     color: $color-fuentes-claro;
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    justify-content: end;
+    align-items: center;
+}
+
+.producto-img {
+    border-radius: .75rem;
+    width: auto;
+    height: 5rem;
+}
+
+.producto-btn {
+    text-decoration: none;
+    color: $color-fuentes-claro;
+    background-color: $color-fuentes-oscuro;
     border: 2px solid $color-fondo-oscuro;
-    border-radius: 30px;
-    font-size: 2rem;
-    font-weight: 800;
-    text-align: center;
+    padding: 3px;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    margin: 0.5rem;
+
+    &:hover {
+        border: 2px solid $color-fuentes-claro;
+        letter-spacing: 0.5px;
+    }
+}
+.carrito-productos {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    height: auto;
+    justify-content: end;
+    padding-block: end;
+}
+
+.infoCarrito {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    height: auto;
+    justify-content: end;
+    padding-block: end;
+}
+
+.carrito-producto {
+    display: flex;
+    justify-content: initial;/*horizontal*/
+    align-items: center;/*vertical*/
+    border-radius: 1rem;
+    border: 2px solid;
+    margin: auto;
+    height: 6rem;
+}
+
+.carrito-finalizado {
+    display: flex; /* Establece el contenedor como flexbox */
+    align-items: center; /* Alinea los elementos hijos verticalmente en el centro */
+    padding: 2rem;
+    border-radius: 0.7rem;
+    background-color: red;
+    margin-left: 1rem;
     margin-top: 2rem;
 }
 
 
-#formulario-compra {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-#formulario-compra .campo-formulario {
-    margin-bottom: 15px;
-}
-
-#formulario-compra label {
-    display: block; /* Para que cada etiqueta se muestre en una línea separada */
-}
-
-#formulario-compra .campo-formulario {
-    display: flex;
-    flex-direction: column;
-}
-
-#formulario-compra button {
+.carrito-producto-btn {
     background-color: $color-tarjetas-claro;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
+    padding: 0.5rem;
+    border: 1px solid $color-fuentes-claro;
+    margin-right: 4px;
+    border-radius: .25rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: $color-fondo-claro;
+        color: $color-negro;
+    }
+
 }
 
-#formulario-compra button:hover {
-    background-color: darken($color-tarjetas-claro, 10%);
+
+
+.d-none {
+    display: none;
 }
 
-#formulario-compra .campo-error {
-    border: 1px solid red; /* Cambia el borde del campo a rojo en caso de error */
+.footer {
+    padding-block: 2rem;
 }
 
+.no-hay-productos {
+    color: $color-rojo-redes;
+}
