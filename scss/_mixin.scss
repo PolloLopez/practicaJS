@@ -2,6 +2,11 @@
     height: 7.5rem;
     transition: transform 2.5s;
     transform: rotate(360deg);
+    margin-top: 2.5rem;
+    
+    &hover {
+        animation: rotateInfinitely 2.4s infinite linear;
+      }
     }
 
   @keyframes rotateInfinitely {
@@ -13,7 +18,5 @@
       }
   }
   
-  .imgLogo:hover {
-    animation: rotateInfinitely 2.4s infinite linear;
-  }
+  
   

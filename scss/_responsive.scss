@@ -5,7 +5,7 @@
 }
 
 .tituloPrincipal h1 {
-            margin-top: none;
+            margin-top: .1rem;
         }
 
 
@@ -13,6 +13,7 @@
 //     .encabezado {
 //         margin-top: 1rem;
 //     }
+// }
 
 //     .tituloPrincipal h1 {
 //         display: none;
@@ -41,37 +42,42 @@
 //     }
 // }
 
-// @media (min-width: 200px) and (max-width: 599px) {
+@media (min-width: 200px) and (max-width: 599px) {
 
-//     /* Estilos para pantallas entre 200px y 499px */
-//     // .botonLeer {
-//     //     display: inline-block;
-//     //     opacity: 0.5;
-//     //     position: relative;
-//     //     bottom: auto;
-//     //     left: auto;
-//     //     transform: none;
-//     //     margin: 1rem;
-//     //     width: 50%;
-//     // }
-
-
-
-// @media (min-width: 600px) and (max-width: 1024px) {
-
-//     /* Estilos para pantallas entre 500px y 1024px */
-//     // .botonLeer {
-//     //     display: none;
-//     // }
+    /* Estilos para pantallas entre 200px y 499px */
+    .botonLeer {
+        display: inline-block;
+        opacity: 0.5;
+        position: relative;
+        bottom: auto;
+        left: auto;
+        transform: none;
+        margin: 1rem;
+        width: 50%;
+    }
+}
 
 
-// @media (min-width: 1025px) {
 
-//     /* Estilos para pantallas mayores a 1025px */
-//     // .botonLeer {
-//     //     display: none;
-//     // }
-// }
+@media (min-width: 700px) {
+    .botonLeer {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Ajusta el tamaño de los productos para pantallas más pequeñas */
+    .producto {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    /* Ajusta el tamaño de los productos para pantallas aún más pequeñas */
+    .producto {
+        font-size: 1.5rem;
+    }
+}
 
 // @media (min-width: 406px) {
 
@@ -84,3 +90,15 @@
 //         margin-top: 1rem;
 //     }
 // }
+
+
+@media only screen and (max-width: 768px) {
+    /* Estilos para pantallas más pequeñas */
+    .encabezado {
+      height: auto;
+      flex-direction: column;
+    }
+    .encabezado .nav-brand {
+      margin-bottom: 1rem;
+    }
+}

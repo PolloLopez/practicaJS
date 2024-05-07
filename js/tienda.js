@@ -43,9 +43,9 @@ const mostrarProductos = (productos) => {
         div.classList.add("producto");
         div.innerHTML = `
         <img class="tiendaImagen" src="${producto.img}" alt="${producto.titulo}">
-        <h3 class="producto">${producto.titulo}</h3>
-        <p>${producto.descripcion}</p>
-        <p>$${producto.precio}</p>
+        <h3 class="producto-titulo">${producto.titulo}</h3>
+        <p class="descripcion-prod-tarj">${producto.descripcion}</p>
+        <p class="precio-tarjeta">$${producto.precio}</p>
         `;
 
         const btn = document.createElement("button"); //se crea el boton
@@ -94,7 +94,7 @@ function actualizarCarrito() { //es lo mismo que  :const actualizarCarrito = () 
 
             const btnRestar = document.createElement("button");
             btnRestar.classList.add("carrito-producto-btn");
-            btnRestar.innerText = "🔻restar";
+            btnRestar.innerText = "🔻";
             btnRestar.addEventListener("click", () => {
                 restarDelCarrito(producto);
             })
@@ -102,7 +102,7 @@ function actualizarCarrito() { //es lo mismo que  :const actualizarCarrito = () 
 
             const btnSumar = document.createElement("button");
             btnSumar.classList.add("carrito-producto-btn");
-            btnSumar.innerText = "sumar🔺";
+            btnSumar.innerText = "🔺";
             btnSumar.addEventListener("click", () => {
                 sumarDelCarrito(producto);
             })
@@ -110,7 +110,7 @@ function actualizarCarrito() { //es lo mismo que  :const actualizarCarrito = () 
 
             const btnEliminar = document.createElement("button");
             btnEliminar.classList.add("carrito-producto-btn");
-            btnEliminar.innerText = "eliminar❌";
+            btnEliminar.innerText = "❌";
             btnEliminar.addEventListener("click", () => {
                 borrarDelCarrito(producto);
             })
