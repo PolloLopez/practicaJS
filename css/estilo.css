@@ -43,7 +43,6 @@
 
 .botonDark {
   margin-top: 25px;
-  position: fixed;
   left: 1rem;
   /* margen al h1 de cada pagina */
 }
@@ -95,15 +94,11 @@
 }
 
 .botonDarkEstilo {
-  position: absolute; /* Cambiado a absolute */
-  left: 1rem;
-  top: 0.5rem;
   cursor: pointer;
   text-decoration: none;
   color: #f1dfdf;
   background-color: #000000;
   border: 2px solid #f1dfdf;
-  z-index: 999; /* Asegura que esté por encima de otros elementos */
 }
 .botonDarkEstilo:hover {
   border: 2px solid #000000;

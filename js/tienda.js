@@ -12,6 +12,27 @@ fetch("/data/productos.json")
         mostrarProductos(data);
     })
 
+
+
+    
+//     /*traer de base de datos local */
+// fetch("jsonEnlace")
+// .then(res => res.json())
+// .then(data => {
+//     productos = data;
+//     mostrarProductos(data);
+// })
+
+// //localhost uso local
+// const jsonEnlace="http://localhost:5500/data/productos.json";
+
+// //uso desde github 
+// //const jsonEnlace="/3erPreentregaJS/data/productos.json"
+
+
+
+
+
 const contenedorProductos = document.querySelector("#productos");
 const carritoVacio = document.querySelector("#carrito-vacio");
 const carritoProductos = document.querySelector("#carrito-productos");
