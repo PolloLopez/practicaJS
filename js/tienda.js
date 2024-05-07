@@ -5,7 +5,7 @@ let productos = [];
 
 /*traer de base de datos local */
 //fetch("/data/productos.json")
-fetch("/data/productos.json")
+fetch("../data/productos.json")
     .then(res => res.json())
     .then(data => {
         productos = data;
@@ -28,10 +28,6 @@ fetch("/data/productos.json")
 
 // //uso desde github 
 // //const jsonEnlace="/3erPreentregaJS/data/productos.json"
-
-
-
-
 
 const contenedorProductos = document.querySelector("#productos");
 const carritoVacio = document.querySelector("#carrito-vacio");
